@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@font-face {
+    font-family: 'jimthorpe';
+    src: url('./assets/fonts/JIMTH___.woff');
+}
+
 body {
     background-color:rgba(255, 228, 196, 0.452);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
 #container {
@@ -20,11 +29,54 @@ body {
     float: left;
     margin-left: 50px;
     box-shadow: 1px 1px 5px 2px black;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 
 #text-area h1 {
     text-align: center;
+    font-family: jimthorpe;
+    font-size: 3rem;
 }
+
+
+#inputs {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+#inputs * {
+    margin: 5px;
+}
+
+#inputs button {
+    background-color: aliceblue;
+    padding: 3px;
+    padding-inline: 10px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+#inputs button:hover {
+    color: gold;
+    background-color: black;
+    box-shadow: 0px 0px 5px 2px gold;
+    border: 2px solid goldenrod;
+}
+
+#inputs select {
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding-inline: 10px;
+}
+
+#inputs select:hover {
+    background-color: black;
+    color: gold;
+    border: 2px solid goldenrod;
+}
+
 
 .gridElement {
     height: 20px;

@@ -1,7 +1,8 @@
 const container = document.querySelector('#container');
+const resetBtn = document.querySelector('#resetBtn');
+const newColor = document.querySelector('#selectClr');
 
-container.style.width = '400px';
-container.style.height = '500px';
+resetBtn.addEventListener('click', reset);
 
 function setUpGrid() {
     for(let i=0; i<25; i++) {
@@ -14,6 +15,15 @@ function setUpGrid() {
             container.appendChild(gridElement);
         }
     }
+}
+
+function reset() {
+    container.innerHTML = '';
+    setUpGrid();
+}
+
+function chooseColor() {
+
 }
 
 window.onload(setUpGrid());
