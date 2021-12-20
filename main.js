@@ -1,6 +1,9 @@
 const container = document.querySelector('#container');
 const resetBtn = document.querySelector('#resetBtn');
-const newColor = document.querySelector('#selectClr');
+const selectClr = document.querySelector('#selectClr');
+
+let brushClr = 'black';
+selectClr.addEventListener('change', chooseColor);
 
 resetBtn.addEventListener('click', reset);
 
@@ -10,7 +13,7 @@ function setUpGrid() {
             const gridElement = document.createElement('div');
             gridElement.className = "gridElement";
             gridElement.addEventListener('mouseover', () => {
-                gridElement.style.background = 'black';
+                gridElement.style.background = brushClr;
             });
             container.appendChild(gridElement);
         }
@@ -22,8 +25,9 @@ function reset() {
     setUpGrid();
 }
 
+chooseColor();
 function chooseColor() {
-
+    brushClr = selectClr.value;
 }
 
-window.onload(setUpGrid());
+window.onload = setUpGrid();
