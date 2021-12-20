@@ -14,13 +14,12 @@ body {
 #container {
     background-color: white;
     display: grid;
-    grid-template-columns: repeat(25, 1fr);
-    grid-template-rows: repeat(25, 1fr);
     box-shadow: 1px 1px 5px 2px black;
     min-width: 500px;
     height: 500px;
     float: left;
 }
+
 
 #text-area {
     background-color: aliceblue;
@@ -77,8 +76,13 @@ body {
     border: 2px solid goldenrod;
 }
 
+#selectSize {
+    width: 75px;
+    border: 2px solid black;
+}
 
-.gridElement {
-    height: 20px;
-    width: 20px;
+#selectSize:hover {
+    background-color: black;
+    color: gold;
+    border: 2px solid goldenrod;
 }
