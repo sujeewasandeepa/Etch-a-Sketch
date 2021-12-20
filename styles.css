@@ -1,10 +1,32 @@
 body {
-    background-color: black;
+    background-color:rgba(255, 228, 196, 0.452);
 }
+
+#container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    box-shadow: 1px 1px 5px 2px black;
+    min-width: 500px;
+    height: 500px;
+    float: left;
+}
+
+#text-area {
+    background-color: aliceblue;
+    height: 500px;
+    width: 45%;
+    float: left;
+    margin-left: 50px;
+    box-shadow: 1px 1px 5px 2px black;
+}
+
+#text-area h1 {
+    text-align: center;
+}
+
 .gridElement {
     height: 20px;
     width: 20px;
-    background-color: rgb(88, 85, 85);
-    display: inline-block;
-    margin-bottom: 0px;
 }
